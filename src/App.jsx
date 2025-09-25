@@ -9,9 +9,10 @@ import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
 const playerPromise = fetch("/players.json").then((res) => res.json());
 function App() {
   const [toggle, setToggle] = useState(true);
+  const [availableBalance, setAvailableBalance] = useState(2000000);
   return (
     <>
-      <Header />
+      <Header availableBalance={availableBalance} />
       <div className='flex justify-between items-center px-5 mb-5 w-11/12 mx-auto mt-10'>
       {
         toggle? <h2 className='font-bold text-2xl'>Available Players </h2> : <h2 className='font-bold text-2xl'>Selected Players</h2>
@@ -30,7 +31,7 @@ function App() {
             </div>
           }
         >
-          <AvailablePlayers playerPromise={playerPromise} />
+          <AvailablePlayers availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playerPromise={playerPromise} />
         </Suspense> : <SelectedPlayers/>
       } 
       <Newsletter />

@@ -3,7 +3,7 @@ import navImg from '../assets/logo.png';
 import coinImg from '../assets/dollar.png';
 import bannerImg from '../assets/banner-main.png';
 import bgImg from '../assets/bg-shadow.png';
-const Header = () => {
+const Header = ({availableBalance}) => {
     return (
         <>
         <nav>
@@ -25,7 +25,7 @@ const Header = () => {
             </div>
             <div className="">
                 <a className="btn flex items-center justify-center">
-                    <span>0</span>
+                    <span>{availableBalance}</span>
                     <span>Coin</span>
                     <img className='w-[20px]' src={coinImg} alt="" />
                 </a>
