@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import "./App.css";
 import AvailablePlayers from "./components/AvailablePlayers/AvailablePlayers";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const playerPromise = fetch("/players.json").then((res) => res.json());
 function App() {
@@ -17,6 +18,7 @@ function App() {
       >
         <AvailablePlayers playerPromise={playerPromise} />
       </Suspense>
+      <Footer/>
     </>
   );
 }
