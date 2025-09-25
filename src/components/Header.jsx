@@ -46,7 +46,7 @@ const Header = () => {
                 </div>
             </div>
         </nav>
-        <header className="w-11/12 mx-auto mt-1 py-10 rounded-2xl bg-[#131313] bg-cover bg-center text-center space-y-2" style={{ backgroundImage: `url(${bgImg})` }}>
+        <header className="w-11/12 mx-auto mt-1 py-10 rounded-2xl bg-[#131313] bg-cover bg-center text-center space-y-2" style={{ backgroundImage: `url(${bgImg})`}}>
             <img className='mx-auto' src={bannerImg} alt="" />
             <h1 className='text-white font-bold text-lg md:text-3xl '>Assemble Your Ultimate Dream 11 Cricket Team</h1>
             <p className='text-[#b8b8b8] font-bold'>Beyond Boundaries Beyond Limits</p>

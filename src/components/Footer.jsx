@@ -3,7 +3,7 @@ import subscribeBtn from '../assets/subscribe-btn-footer.png'
 import logoFooter from '../assets/logo-footer.png'
 const Footer = () => {
     return (
-        <div className='bg-[#06091A] text-white pt-[200px]  mt-10'>
+        <div className='bg-[#06091A] text-white pt-[200px] relative z-0'>
             <img className='mx-auto mb-5' src={logoFooter} alt="" />
             <div className='grid grid-cols-1 md:grid-cols-3 w-11/12 mx-auto gap-[60px] pb-10'>
                 <div className='space-y-2'>
